@@ -1,0 +1,657 @@
+@media screen and (min-width: 768px) {
+  html {
+    background-color: aliceblue;
+  }
+  body {
+    margin: 0;
+  }
+
+  /*ヘッダーの仕様*/
+  .hd {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 54px;
+    width: 100%;
+    background-color: aliceblue;
+    z-index: 500;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    border-bottom: 1px;
+  }
+  .logo {
+    float: left;
+    padding-left: 30px;
+  }
+  .header_menu {
+    height: 54px;
+    float: right;
+    margin-right: 50px;
+  }
+  #Company {
+    height: 54px;
+    float: left;
+  }
+  #Service {
+    height: 54px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #Contact {
+    height: 54px;
+    float: left;
+  }
+  .Company_link,
+  .Service_link,
+  .Contact_link {
+    color: #aaaaaa;
+  }
+  .slider {
+    margin: 54px 0px 0px 0px;
+    width: 100%;
+    padding-left: 0;
+    filter: brightness(75%);
+    z-index: -1;
+  }
+  .slider img {
+    height: auto;
+    width: 100%;
+  }
+  /*slick setting*/
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000;
+  }
+  li {
+    position: relative;
+  }
+
+  /*Topページの仕様*/
+  #menu {
+    font-size: 50px;
+  }
+  li p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: 0 2px 2px rgb(37, 35, 35);
+  }
+  .Mission {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+    border-bottom: 2px solid rgb(113, 113, 241);
+  }
+  .OurService {
+    display: grid;
+    gap: 210px;
+    grid-template-columns: 10px 220px 220px 220px 10px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .Mission p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    background-color: white;
+  }
+  div.System,
+  div.Web,
+  div.Mobile {
+    background-color: #ffffff;
+    border-radius: 10%;
+    padding-bottom: 20px;
+  }
+  .OurService button {
+    background: #ffffff;
+    width: 180px;
+    height: 35px;
+    color: #1d4873;
+    font-size: 13px;
+    border-radius: 5%;
+  }
+  .OurService button:hover {
+    background: #1d4873;
+    color: #ffffff;
+  }
+  .hr1 {
+    border-top: 4px solid rgb(113, 113, 241);
+  }
+  .SiteInfo {
+    position: relative;
+    height: 120px;
+  }
+  .SiteInfo h3 {
+    position: absolute;
+    margin-top: 0;
+    left: 20%;
+  }
+  .SiteInfo p {
+    position: absolute;
+    left: 20%;
+    top: 30px;
+  }
+  /*フッターの仕様*/
+  .ft {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 10px;
+    background-color: lightslategray;
+  }
+  .footer_menu {
+    margin-left: 550px;
+    margin-bottom: 60px;
+  }
+  .SNS_menu {
+    position: relative;
+    margin-left: 590px;
+    margin-bottom: 60px;
+  }
+  .ft_h3 {
+    text-align: center;
+    color: #ffffff;
+  }
+  .Top_ft,
+  .Company_ft,
+  .Service_ft,
+  .Contact_ft,
+  .twiteer_ft,
+  .Facebook_ft,
+  .Instagram_ft {
+    color: #ffffff;
+  }
+  .footer_menu a {
+    display: block;
+    height: 20px;
+    width: 130px;
+    float: left;
+  }
+  .SNS_menu a {
+    display: block;
+    height: 20px;
+    width: 140px;
+    float: left;
+  }
+  .ft_info {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  /*Serviceページの仕様*/
+  .pg-service {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 6fr 1fr 6fr;
+    margin-top: 54px;
+  }
+  .sys-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 54px;
+    text-align: center;
+    position: relative;
+    left: 35%;
+  }
+  #System {
+    width: 30%;
+    border-bottom: 3px solid #1d4873;
+  }
+  .system-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    border-radius: 10px;
+  }
+  .system-tx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    height: 100%;
+  }
+  .sys1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 0 15px 0 0;
+    background: #ffffff;
+  }
+  .sys2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 0 0 15px 0;
+    background: #ffffff;
+  }
+  .web-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    position: relative;
+    left: 35%;
+  }
+  #Web {
+    width: 30%;
+    border-bottom: 3px solid #1d4873;
+  }
+  .web-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    position: relative;
+    border-radius: 10px;
+  }
+  .web-tx {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 15px 15px 0;
+    width: 35%;
+    height: 100%;
+  }
+  .web1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 15px 0 0 0;
+    background: #ffffff;
+  }
+  .web2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 65%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 0 0 0 15px;
+    background: #ffffff;
+  }
+  .mob-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    position: relative;
+    left: 35%;
+  }
+  #Mobile {
+    width: 30%;
+    border-bottom: 3px solid #1d4873;
+  }
+  .mobile-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .mobile-tx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    height: 100%;
+  }
+  .mob1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 0 15px 0 0;
+    background: #ffffff;
+  }
+  .mob2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    height: 50%;
+    padding: 15px;
+    border-radius: 0 0 15px 0;
+    background: #ffffff;
+  }
+  .system-tx,
+  .web-tx,
+  .mobile-tx {
+    width: 35%;
+  }
+
+  /*Companyページの仕様*/
+  .ceo {
+    text-align: center;
+    position: relative;
+    left: 35%;
+    margin-top: 54px;
+    width: 30%;
+  }
+  .ceo-title {
+    border-bottom: 3px solid #1d4873;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .plf-icon {
+    display: block;
+    width: 20%;
+    position: relative;
+    background: #ffffff;
+  }
+  .plf-img {
+    display: block;
+    width: 50%;
+    position: absolute;
+    border: 2px solid;
+    top: 10%;
+    left: 20%;
+  }
+  .plf-txt {
+    width: 40%;
+    background: #ffffff;
+  }
+  .plf-txt h3 {
+    padding-right: 20px;
+    text-align: right;
+  }
+  .company {
+    text-align: center;
+    position: relative;
+    left: 35%;
+    width: 30%;
+  }
+  .company-title {
+    border-bottom: 3px solid #1d4873;
+  }
+  .table-box {
+    background: #ffffff;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin: 30px 0 50px;
+    padding: 30px 0 50px;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  caption {
+    font-size: 20px;
+    text-align: left;
+  }
+  th,
+  td {
+    padding: 20px;
+    border: 1px solid #ffffff;
+    text-align: left;
+  }
+  th {
+    width: 100px;
+  }
+  td {
+    width: 500px;
+  }
+  tr {
+    background: #dddddd;
+  }
+  .tr1 {
+    background-color: #bbbbbb;
+  }
+
+  /*Contactの仕様*/
+  .contact {
+    text-align: center;
+    position: relative;
+    left: 35%;
+    margin-top: 54px;
+    width: 30%;
+  }
+  .contact-title {
+    border-bottom: 3px solid #1d4873;
+  }
+  .form-area {
+    background: #ffffff;
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+    height: 800px;
+  }
+  form {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .item {
+    margin: 15px;
+    padding: 15px;
+  }
+  .item-a {
+    margin: 15px;
+    padding: 15px;
+    height: 120px;
+  }
+  select,
+  textarea,
+  input {
+    position: absolute;
+    width: 40%;
+    height: 35px;
+    left: 40%;
+  }
+  textarea {
+    position: absolute;
+    width: 40%;
+    height: 120px;
+    left: 40%;
+  }
+  div.lavel {
+    display: inline;
+  }
+  .label .p1 {
+    display: inline;
+    position: absolute;
+    left: 40%;
+    margin: 0 auto;
+  }
+  .label .p2 {
+    display: inline;
+    position: absolute;
+    left: 60%;
+    margin: 0 auto;
+  }
+  #radio-a,
+  #radio-b {
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .confirm-button {
+    text-align: center;
+  }
+  #privacy {
+    width: auto;
+    height: auto;
+    position: unset;
+  }
+  #confirm {
+    width: 150px;
+    height: 50px;
+  }
+  .privacy-policy {
+    width: 55%;
+    margin: 50px auto;
+    height: 250px;
+    overflow: scroll;
+    padding: 25px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    line-height: 1.5;
+    &__item {
+      p {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  #name-err,
+  #tel-err,
+  #mail-err,
+  #mail-err2,
+  #calender-err {
+    position: absolute;
+    left: 40%;
+    padding-top: 3px;
+    font-size: 13px;
+    color: #f00;
+    display: none;
+  }
+  #textarea-err {
+    position: absolute;
+    left: 40%;
+    padding-top: 3px;
+    font-size: 13px;
+    color: #f00;
+    bottom: 20%;
+    display: none;
+  }
+
+  #modal1,
+  #modal2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    display: none;
+  }
+  .send_form {
+    background: #ffffff;
+    width: 860px;
+    position: fixed;
+    margin: 0 auto;
+    height: 60%;
+    left: 22%;
+    top: 25%;
+    z-index: 1000;
+    display: block;
+    overflow-y: auto;
+    overflow-y: scroll;
+  }
+  .kakunin {
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+  .table2 {
+    width: 80%;
+    margin: 0 auto 50px;
+  }
+  .send {
+    height: 50px;
+  }
+  .send td,
+  .send th {
+    padding: 0%;
+    background: #ffffff;
+  }
+  .send th {
+    width: 20%;
+  }
+  .send td {
+    width: 40%;
+  }
+  #button1 {
+    position: relative;
+    left: 30%;
+    width: 150px;
+    height: 50px;
+    bottom: 30px;
+    bottom: 25px;
+    filter: saturate(130%);
+    background: #1d4873;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  #button2 {
+    position: relative;
+    left: 35%;
+    width: 150px;
+    height: 50px;
+    bottom: 30px;
+    bottom: 25px;
+    filter: saturate(130%);
+    background: #d44;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .send-ok {
+    z-index: 1100;
+    position: fixed;
+    background: #ffffff;
+    top: 40%;
+    left: 40%;
+    padding: 13px;
+    border-radius: 25px;
+  }
+  #close {
+    position: relative;
+    left: 25%;
+    width: 150px;
+    height: 50px;
+    background: #1d4873;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    filter: saturate(130%);
+  }
+}

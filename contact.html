@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <!--JS-->
+
+    <title>株式会社ウェブカ | Contact</title>
+  </head>
+  <body>
+    <header class="hd">
+      <a class="logo" href="C:\develop\test\index.html">
+        <img src="C:\develop\test\images\logo.png" alt="header_logo" />
+      </a>
+      <div class="header_menu">
+        <p id="Company">
+          <a class="Company_link" href="C:\develop\test/company.html"
+            >Company</a
+          >
+        </p>
+        <p id="Service">
+          <a class="Service_link" href="C:\develop\test/service.html"
+            >Service</a
+          >
+        </p>
+        <p id="Contact">
+          <a class="Contact_link" href="C:\develop\test/contact.html"
+            >Contact</a
+          >
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="contact">
+        <h2 class="contact-title">Contact</h2>
+      </div>
+      <div class="form-area">
+        <form method="post" action="contact.html">
+          <div class="item">
+            <label for="name">氏名</label>
+            <input id="name" type="text" name="name" placeholder="苗字　名前" />
+            <p id="name-err">入力必須項目です。</p>
+          </div>
+          <div class="item">
+            <label for="company-name">貴社名</label>
+            <input
+              id="company-name"
+              type="text"
+              name="company-name"
+              placeholder="株式会社XXXX"
+            />
+          </div>
+          <div class="item">
+            <label for="tel">電話番号</label>
+            <input
+              id="tel"
+              type="tel"
+              name="tel"
+              placeholder="0312345678（ハイフンなし）"
+            />
+            <p id="tel-err">入力フォーマットが異なります。</p>
+          </div>
+          <div class="item">
+            <label for="mail">メールアドレス</label>
+            <input
+              id="mail"
+              type="email"
+              name="mail"
+              placeholder="sample@mail.com"
+            />
+            <p id="mail-err">入力必須項目です。</p>
+            <p id="mail-err2">入力フォーマットが異なります。</p>
+          </div>
+          <div class="item">
+            <label for="busines">目的</label>
+            <select id="busines" name="pull-down">
+              <option value="仕事のご依頼">仕事のご依頼</option>
+              <option value="ビシネスパートナー">ビジネスパートナー</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+          <div class="item">
+            <div class="label">
+              連絡先
+              <p class="p1">
+                <label for="radio-a">電話</label>
+                <input id="radio-a" type="radio" name="radio" />
+              </p>
+              <p class="p2">
+                <label for="radio-b">メール</label>
+                <input id="radio-b" type="radio" name="radio" />
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <label for="calender">打ち合わせ希望日</label>
+            <input id="calender" type="date" />
+            <p id="calender-err">選択必須項目です。</p>
+          </div>
+          <div class="item-a">
+            <label for="=textarea">本文</label>
+            <textarea
+              id="textarea"
+              name="message-body"
+              placeholder="メッセージ"
+            ></textarea>
+            <p id="textarea-err">入力必須項目です。</p>
+          </div>
+          <div class="item">
+            <label for="file">添付ファイル</label>
+            <input id="file" type="file" name="file" />
+          </div>
+          <div class="confirm-button">
+            <p>
+              <input id="privacy" type="checkbox" name="accept" />
+              <label>プライバシーポリシーに同意する</label>
+            </p>
+            <button id="confirm" type="button" disabled>Confirm</button>
+          </div>
+        </form>
+      </div>
+      <div id="modal1">
+        <div class="send_form">
+          <p class="kakunin">下記の内容で送信します。</p>
+          <table class="table2">
+            <tr class="send">
+              <th>氏名</th>
+              <td id="form-name"></td>
+            </tr>
+            <tr class="send">
+              <th>貴社名</th>
+              <td id="form-company-name"></td>
+            </tr>
+            <tr class="send">
+              <th>電話番号</th>
+              <td id="form-tel">0312345678</td>
+            </tr>
+            <tr class="send">
+              <th>メールアドレス</th>
+              <td id="form-mail"></td>
+            </tr>
+            <tr class="send">
+              <th>目的</th>
+              <td id="form-busines"></td>
+            </tr>
+            <tr class="send">
+              <th>連絡方法</th>
+              <td id="form-com"></td>
+            </tr>
+            <tr class="send">
+              <th>打ち合わせ希望日</th>
+              <td id="form-calender"></td>
+            </tr>
+            <tr class="send">
+              <th>本文</th>
+              <td id="form-textarea"></td>
+            </tr>
+            <tr class="send">
+              <th>添付ファイル</th>
+              <td id="form-file"></td>
+            </tr>
+          </table>
+          <button id="button1" type="button">back</button>
+          <button id="button2" type="button">send</button>
+        </div>
+      </div>
+      <div id="modal2">
+        <div class="send-ok">
+          <p class="kanryou1">ありがとうございます。</p>
+          <p class="kanryou2">メッセージを送信しました。</p>
+          <p class="kanryou3">担当者から折り返しご連絡いたします。</p>
+          <button id="close">close</button>
+        </div>
+      </div>
+      <div class="privacy-policy">
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">プライバシーポリシー</p>
+          <p class="privacy-policy__item__desc">
+            株式会社ウェブ力（以下「当社」といいます）は、お客様に関する個人情報の取り扱いについて以下の方針を基に個人情報の保護を実施して参ります
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">1. 利用目的の範囲内での利用</p>
+          <p class="privacy-policy__item__desc">
+            当社は、個人情報（特定の個人を識別できるもの。以下も同様とします。）を取り扱う際に、個人情報の保護に関する法律をはじめ個人情報保護に関する諸法令、および主務大臣のガイドラインに定められた義務、ならびに本方針を遵守します。
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">2. 個人情報の取得</p>
+          <p class="privacy-policy__item__desc">
+            当社は、あらかじめご本人の同意を得た場合、および法令により認められた場合を除き、あらかじめ特定された利用目的の達成に必要な範囲内でのみ個人情報を取り扱います。
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">3. 安全管理措置</p>
+          <p class="privacy-policy__item__desc">
+            当社は、あらかじめ利用目的、共同利用者の範囲、お問い合わせ窓口等の必要な情報を明示し、ご本人の同意を得たうえで個人情報を取得するよう努めます。
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">4. 第三者への提供</p>
+          <p class="privacy-policy__item__desc">
+            当社は、個人情報への不正アクセス、個人情報の漏えい、滅失又はき損の予防及び是正、その他の安全管理のため必要かつ適切な措置を講じます。
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">5. ご意見・ご相談への対応</p>
+          <p class="privacy-policy__item__desc">
+            当社は、法令により認められた場合を除き、ご本人の同意を得ることなく、第三者に個人情報を提供しません。
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">6. 社内体制の継続的改善</p>
+          <p class="privacy-policy__item__desc">
+            当社は、個人情報の開示、訂正、利用の停止、消去その他の個人情報の取り扱いに関するご意見やお問い合わせに対し、法令の規定に基づき、適切に対応いたします。
+          </p>
+        </div>
+        <div class="privacy-policy__item">
+          <p class="privacy-policy__item__title">7. 個人情報取り扱い</p>
+          <p class="privacy-policy__item__desc">
+            当社は、個人情報の取扱いに関する教育啓発活動を全役員及び従業員に実施し、個人情報保護マネジメントシステムを継続的に見直し、その改善をします。
+          </p>
+        </div>
+      </div>
+      <footer class="ft">
+        <h3 class="ft_h3">Site Map</h3>
+        <div class="footer_menu">
+          <p class="Top-logo">
+            <a class="Top_ft" href="C:/develop/test/index.html">Top</a>
+          </p>
+          <p class="company-logo">
+            <a class="Company_ft" href="C:\develop\test/company.html"
+              >Company</a
+            >
+          </p>
+          <p class="Service-logo">
+            <a class="Service_ft" href="C:/develop/test/service.html"
+              >Service</a
+            >
+          </p>
+          <p class="Contact-logo">
+            <a class="Contact_ft" href="C:\develop\test\contact.html"
+              >Contact</a
+            >
+          </p>
+        </div>
+        <h3 class="ft_h3">SNS</h3>
+        <div class="SNS_menu">
+          <p class="twiteer">
+            <a class="twiteer_ft" href="https://twitter.com/"
+              >&#xea96;twiteer</a
+            >
+          </p>
+          <p class="Facebook">
+            <a class="Facebook_ft" href="https://www.facebook.com/"
+              >&#xea90;Facebook</a
+            >
+          </p>
+          <p class="Instagram">
+            <a class="Instagram_ft" href="https://www.instagram.com/"
+              >&#xea92;Instagram</a
+            >
+          </p>
+        </div>
+        <p class="ft_info">(c)2021 開発事業部 - Web課 All Right Reserved.</p>
+      </footer>
+      <script
+        type="text/javascript"
+        src="C:/develop/test/assets/js/jquery-3.6.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="C:/develop/test/assets/js/slick.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="C:/develop/test/assets/js/main.js"
+      ></script>
+    </main>
+  </body>
+</html>
